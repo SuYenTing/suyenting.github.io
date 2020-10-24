@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Azure on Hello Friend, I&#39;m Yestin!</title>
+    
+    
+    
+    <link>/tags/azure/</link>
+    <description>Recent content in Azure on Hello Friend, I&#39;m Yestin!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 08 Jul 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/azure/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>在Azure雲端平台建立CentOS虛擬機器，並安裝遠端桌面服務、R軟體及MySQL資料庫</title>
+      <link>/post/azure-install-centos/</link>
+      <pubDate>Sun, 08 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/azure-install-centos/</guid>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          在產學合作案中，合作公司希望能夠將我們開發的程式放在CentOS作業系統中執行，畢竟若要商轉的話，Linux作業系統是免費的，可以很省錢。但我對Linux系統沒有很熟悉，之前上課時有稍微玩過沒有到很熟練。為了能夠測試程式是否能在CentOS中運作，我自己去Azure雲端平台嘗試建立一個虛擬機器來進行測試，這篇是我建立環境的流程筆記。
+          
+        
+        </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on Hello Friend, I&#39;m Yestin!</title>
+    
+    
+    
+    <link>/tags/hugo/</link>
+    <description>Recent content in Hugo on Hello Friend, I&#39;m Yestin!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 03 Mar 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>利用R的Blogdown套件建立個人部落格網站</title>
+      <link>/post/create-my-website/</link>
+      <pubDate>Sat, 03 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/create-my-website/</guid>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          此次的文章主要是記錄我的個人部落格網站是如何建立出來的，我主要是Follow這篇文章 [用R语言的blogdown+hugo+netlify+github 建博客](https://cosx.org/2018/01/build-blog-with-blogdown-hugo-netlify-github/) 來架設。不過在按部就班的過程中有遇到一些問題，所以我這邊會在講述我順利架設的流程，提供給大家參考。有些地方我可能不會講得很清楚，可以和我Follow的文章搭配一起看。
+          
+        
+        </description>
+    </item>
+    
+  </channel>
+</rss>

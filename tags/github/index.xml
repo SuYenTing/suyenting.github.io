@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Github on Hello Friend, I&#39;m Yestin!</title>
+    
+    
+    
+    <link>/tags/github/</link>
+    <description>Recent content in Github on Hello Friend, I&#39;m Yestin!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 29 Jun 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>在網頁嵌入Gist程式碼教學</title>
+      <link>/post/embed-gist-code-introduction/</link>
+      <pubDate>Fri, 29 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/embed-gist-code-introduction/</guid>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          最近在逛別人的程式技術網站時，會發現他們的範例程式碼都特別漂亮。雖然我很努力去理解`HUGO`的語法，想辦法去調整自己Blog程式碼的顯現方式(後來GOOGLE發現這有專有名詞，叫做**程式碼高亮**)，但怎麼調都還是醜醜的。後來發現Github有提供一個叫做`Gist`的服務，可以把程式碼上傳上去，並且提供嵌入網頁的功能，只需要加入一行`JavaScript`程式碼即可，非常方便。
+          
+        
+        </description>
+    </item>
+    
+    <item>
+      <title>利用R的Blogdown套件建立個人部落格網站</title>
+      <link>/post/create-my-website/</link>
+      <pubDate>Sat, 03 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/create-my-website/</guid>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          此次的文章主要是記錄我的個人部落格網站是如何建立出來的，我主要是Follow這篇文章 [用R语言的blogdown+hugo+netlify+github 建博客](https://cosx.org/2018/01/build-blog-with-blogdown-hugo-netlify-github/) 來架設。不過在按部就班的過程中有遇到一些問題，所以我這邊會在講述我順利架設的流程，提供給大家參考。有些地方我可能不會講得很清楚，可以和我Follow的文章搭配一起看。
+          
+        
+        </description>
+    </item>
+    
+  </channel>
+</rss>
