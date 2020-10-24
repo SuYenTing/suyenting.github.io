@@ -15,6 +15,29 @@
     
     
     <item>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Sat, 24 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          嗨, 您好! 歡迎您來到我的Blog 我是蘇彥庭(Yestin)，台南人。
+大學念暨大經濟系，碩士念中山財管所，曾去上海復旦大學金融系交換及在當地企業實習。
+目前在中山大學財管系擔任教授的研究助理，研究機器學習如何應用於財務投資上。
+我喜歡寫程式做分析，這個Blog是紀錄自己學習的歷程，很開心能夠與您分享。
+          
+        
+        </description>
+    </item>
+    
+    <item>
       <title>Linux(Ubuntu 18.04)建立R及GPU環境相關設定流程</title>
       <link>/post/linux_ubuntu_configure/</link>
       <pubDate>Tue, 22 Sep 2020 00:00:00 +0000</pubDate>
@@ -35,28 +58,6 @@
     </item>
     
     <item>
-      <title>About</title>
-      <link>/about/</link>
-      <pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/about/</guid>
-      <description>
-        
-          
-          
-          
-        
-        
-        
-          Hi there My name is Radek and I&amp;rsquo;m the author of this theme. I made it to help you present your ideas easier.
-We all know how hard is to start something on the web, especially these days. You need to prepare a bunch of stuff, configure them and when that’s done — create the content.
-This theme is pretty basic and covers all of the essentials. All you have to do is start typing!
-          
-        
-        </description>
-    </item>
-    
-    <item>
       <title>Showcase</title>
       <link>/showcase/</link>
       <pubDate>Fri, 18 Jan 2019 00:00:00 +0000</pubDate>
@@ -71,6 +72,26 @@ This theme is pretty basic and covers all of the essentials. All you have to do 
         
         
           Header 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec interdum metus. Aenean rutrum ligula sodales ex auctor, sed tempus dui mollis. Curabitur ipsum dui, aliquet nec commodo at, tristique eget ante. Donec quis dolor nec nunc mollis interdum vel in purus. Sed vitae leo scelerisque, sollicitudin elit sed, congue ante. In augue nisl, vestibulum commodo est a, tristique porttitor est. Proin laoreet iaculis ornare. Nullam ut neque quam.
+          
+        
+        </description>
+    </item>
+    
+    <item>
+      <title>以梯度下降法解線性迴歸係數</title>
+      <link>/post/linear-gradient-descent-method/</link>
+      <pubDate>Mon, 17 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/linear-gradient-descent-method/</guid>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          此篇文章說明如何用梯度下降(Gradient Descent)方法找出線性迴歸最佳參數解。
           
         
         </description>

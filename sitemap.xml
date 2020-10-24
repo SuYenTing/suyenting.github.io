@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/about/</loc>
+    <lastmod>2020-10-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/categories/</loc>
     <lastmod>2020-09-22T00:00:00+00:00</lastmod>
   </url>
@@ -53,13 +58,18 @@
   </url>
   
   <url>
-    <loc>/about/</loc>
-    <lastmod>2019-01-25T00:00:00+00:00</lastmod>
+    <loc>/showcase/</loc>
+    <lastmod>2019-01-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/showcase/</loc>
-    <lastmod>2019-01-18T00:00:00+00:00</lastmod>
+    <loc>/tags/machine-learning/</loc>
+    <lastmod>2018-09-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/linear-gradient-descent-method/</loc>
+    <lastmod>2018-09-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
