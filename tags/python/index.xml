@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on Hello Friend, I&#39;m Yestin!</title>
+    
+    
+    
+    <link>/tags/python/</link>
+    <description>Recent content in Python on Hello Friend, I&#39;m Yestin!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 11 Jan 2021 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Python連線MySQL方法說明</title>
+      <link>/post/python_connect_to_mysql/</link>
+      <pubDate>Mon, 11 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/post/python_connect_to_mysql/</guid>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          本篇文章是紀錄如何用Python程式碼來連線MySQL資料庫，將以mysql-connector-python套件來進行實作。
+          
+        
+        </description>
+    </item>
+    
+  </channel>
+</rss>
