@@ -52,7 +52,7 @@
   </url>
   
   <url>
-    <loc>/post/start_connect_mongodb/</loc>
+    <loc>/post/start-connect-mongodb/</loc>
     <lastmod>2021-01-12T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -73,7 +73,7 @@
   </url>
   
   <url>
-    <loc>/post/python_connect_to_mysql/</loc>
+    <loc>/post/python-connect-to-mysql/</loc>
     <lastmod>2021-01-11T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
