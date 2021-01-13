@@ -9,10 +9,30 @@
     <description>Recent content on Hello Friend, I&#39;m Yestin!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 12 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 13 Jan 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>將Python程式放在Linux背景執行</title>
+      <link>/post/run-python-in-linux-background/</link>
+      <pubDate>Wed, 13 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/post/run-python-in-linux-background/</guid>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          本篇文章說明如何在Linux作業系統的Shell背景執行Python程式，而且在使用者離線或登出時不會中斷。
+          
+        
+        </description>
+    </item>
     
     <item>
       <title>快速啟動及連線MongoDB方法</title>
