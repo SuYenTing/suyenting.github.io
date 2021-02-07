@@ -23,10 +23,10 @@ web: gunicorn main:app –log-file - clock: python clock.py web表示這是一�
 clock表示這是一個定時排程器，clock.py即為要定時排程的檔案。Heroku官網推薦使用APScheduler套件，詳情可參考Heroku官網說明-Scheduled Jobs with Custom Clock Processes in Python with APScheduler。
 Procfile其他詳細設定說明可參考Heroku官網說明-The Procfile。
  requirements.txt  部署Python服務時需要安裝的套件清單，檔案內容如下：
-gunicorn flask line-bot-sdk mysql-connector-python APScheduler==3.0.0  runtime.txt Python安裝的版本，此處要先查閱Heroku可安裝版本的清單(會隨時更新)，不然會報錯。此處安裝python-3.7.9版本，檔案寫法如下：  python-3.7.9  main.py  此為Python Flask程式碼，主要用於Line機器人在接收使用者訊息後，判斷要回應的訊息。
+gunicorn flask line-bot-sdk mysql-connector-python APScheduler==3.0.0 requests  runtime.txt Python安裝的版本，此處要先查閱Heroku可安裝版本的清單(會隨時更新)，不然會報錯。此處安裝python-3.7.9版本，檔案寫法如下：  python-3.7.9  main.py  此為Python Flask程式碼，主要用於Line機器人在接收使用者訊息後，判斷要回應的訊息。
  clock.py  此為Python程式碼，主要用於Line機器人定時推播訊息到群組，以及自動喚醒Heroku服務功能，裡面有撰寫APScheduler套件的程式碼。
 此處特別說明一個機制：自動喚醒。由於Heroku在半小時內沒人來使用服務，即會自動休眠，且休眠後排程也會跟著一起休眠，不會因為排程時間到而自動啟動排程。所以為維持機器人的推播功能，一定要讓Heroku持續醒著提供服務。
-參考這邊文章LINE BOT SDK：Heroku 夜未眠（一）的作法，透過Python的urllib套件，定時排程去request我們的服務網址，這樣就可以讓Heroku以為我們的服務一直有人來使用。此處透過APScheduler套件來設定排程，關鍵的程式碼如下：
+參考這邊文章LINE BOT SDK：Heroku 夜未眠（一）的作法，透過Python的requests套件，定時排程去requests我們的服務網址，這樣就可以讓Heroku以為我們的服務一直有人來使用。此處透過APScheduler套件來設定排程，關鍵的程式碼如下：
 # 防止睡眠 def DoNotSleep(): url = &amp;quot;https://linebotceb102."
 />
 <meta
@@ -251,6 +251,7 @@ flask
 line-bot-sdk
 mysql-connector-python
 APScheduler==3.0.0
+requests
 </code></pre><ul>
 <li>runtime.txt
 Python安裝的版本，此處要先查閱<a href="https://devcenter.heroku.com/articles/python-support">Heroku可安裝版本的清單</a>(會隨時更新)，不然會報錯。此處安裝python-3.7.9版本，檔案寫法如下：</li>
@@ -265,14 +266,14 @@ Python安裝的版本，此處要先查閱<a href="https://devcenter.heroku.com/
 </ul>
 <p>此為Python程式碼，主要用於Line機器人定時推播訊息到群組，以及自動喚醒Heroku服務功能，裡面有撰寫APScheduler套件的程式碼。</p>
 <p>此處特別說明一個機制：自動喚醒。由於Heroku在半小時內沒人來使用服務，即會自動休眠，且<strong>休眠後排程也會跟著一起休眠，不會因為排程時間到而自動啟動排程</strong>。所以為維持機器人的推播功能，一定要讓Heroku持續醒著提供服務。</p>
-<p>參考這邊文章<a href="https://ithelp.ithome.com.tw/articles/10218874">LINE BOT SDK：Heroku 夜未眠（一）</a>的作法，透過Python的urllib套件，定時排程去request我們的服務網址，這樣就可以讓Heroku以為我們的服務一直有人來使用。此處透過APScheduler套件來設定排程，關鍵的程式碼如下：</p>
+<p>參考這邊文章<a href="https://ithelp.ithome.com.tw/articles/10218874">LINE BOT SDK：Heroku 夜未眠（一）</a>的作法，透過Python的requests套件，定時排程去requests我們的服務網址，這樣就可以讓Heroku以為我們的服務一直有人來使用。此處透過APScheduler套件來設定排程，關鍵的程式碼如下：</p>
 <pre><code class="language-python=" data-lang="python="># 防止睡眠
 def DoNotSleep():
     url = &quot;https://linebotceb102.herokuapp.com/&quot;
-    conn = urllib.request.urlopen(url)
+    r = requests.get(url)
 
 # 防止自動休眠
-sched.add_job(DoNotSleep, trigger='interval', id='doNotSleeps_job', minute=20)
+sched.add_job(DoNotSleep, trigger='interval', id='doNotSleeps_job', minutes=20)
 </code></pre><p>從上面的程式碼，可以看到我每20分鐘即會去request服務的網址。</p>
 <ul>
 <li>secretFile.json
@@ -414,7 +415,6 @@ To https://git.heroku.com/linebot-class-helper.git
 <p>Line機器人服務部署完後，即可將服務網址貼到Line Develoer的webhook連結設定。</p>
 <p>服務網址的格式為：<code>https://[專案名稱].herokuapp.com/</code>，可以發現Heroku提供的是加密網址，符合Line機器人Webhook的要求。</p>
 <p>以我們的服務為例，網址即為<a href="https://linebot-class-helper.herokuapp.com/">https://linebot-class-helper.herokuapp.com/</a>。</p>
-<p>不過連入時可能會發現網站呈現<code>Method Not Allowed</code>字樣，這是因為我們的web僅提供POST功能。</p>
 <p>將服務網址貼到Line Developer的Webhook：</p>
 <p><img src="https://i.imgur.com/NNRfs83.png" alt=""></p>
 <p>這樣就大功告成，可以開始使用Line機器人的服務！</p>
